@@ -22,3 +22,7 @@ group :test do
   gem 'faker'
   gem 'rspec'
 end
+
+#soundcould
+
+gem 'soundcloud', '~>0.3.2'

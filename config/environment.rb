@@ -33,4 +33,14 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 require APP_ROOT.join('config', 'database')
 
 #Sound CLoud API
-$client = SoundCloud.new({:client_id => ENV['SOUNDCLOUD_CLIENT_ID']})
+require 'soundcloud'
+# begin
+$client = SoundCloud.new({:client_id => 'ENV[SOUNDCLOUD_CLIENT_ID]'})
+# rescue SoundCloud::ResponseError => e
+#  p e.response
+# end
+
+# $client = Soundcloud.new(:client_id => 'ENV[SOUNDCLOUD_CLIENT_ID]',
+#                         :client_secret => 'ENV[SOUNDCLOUD_SECRET]',
+#                         :username => 'zahid.jethani@gmail.com',
+#                         :password => 'Brainstormin3')
