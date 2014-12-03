@@ -3,6 +3,7 @@
 </div>
 
 <div class="bottom">
+  <h1><%= @playlist.name %></h1>
   <%= erb :'song/create_song', :locals => {playlist: @playlist} %>
   <%= erb :'/playlist/delete_playlist', :locals => {playlist: @playlist} %><br><br>
   <div class="all_songs"><br><br>

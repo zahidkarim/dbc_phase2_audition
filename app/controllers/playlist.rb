@@ -29,6 +29,13 @@ get '/playlists/:id' do |id|
   erb :"/playlist/one"
 end
 
+#Edit palylist
+put '/playlists/:id' do |id|
+  playlist = Playlist.find(id)
+  playlist.update(params[:playlist])
+  redirect("/playlists/#{id}")
+end
+
 # Delete playlist
 delete '/playlists/:id' do |id|
   playlist = Playlist.find(id)

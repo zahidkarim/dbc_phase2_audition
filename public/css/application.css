@@ -11,6 +11,7 @@
   font-size: 0.5em;
 }
 
+
 span{
   color:#FFFFF;
 }
@@ -30,7 +31,9 @@ th {
   bottom:0;
   height:82%;
   width:100%;
+  font-family: 'Rock Salt', cursive;
   background-image: url("bottom_img.png") ;
+  font-size: 0.5em;
   background-size:100%;
   opacity: 0.3;
 }
@@ -38,4 +41,9 @@ th {
 a{
   text-decoration: none;
   color:black;
+}
+
+img {
+  height:50px;
+  width:50px;
 }
