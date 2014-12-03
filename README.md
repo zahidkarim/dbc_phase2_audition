@@ -80,8 +80,8 @@ CSS
 
 -----COMMIT COMMIT COMMIT-----
 
-1) Setup tables, migrations, and seed the data
-2) CRUD Playlist (all separate pages)
+1) Setup tables, migrations, and seed the data - DONE
+2) CRUD Playlist (all separate pages) -
 3) CRUD Song
 4) Make sure the associations work
 -----GOAL LUNCH---------------

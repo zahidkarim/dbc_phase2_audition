@@ -6,6 +6,13 @@ get '/playlists/all' do
     erb :"/playlist/all"
 end
 
+#Create playlist
+post '/playlists/all' do
+  user = current_user
+  user.playlists.create(name: params[:name])
+  redirect("/my_playlists")
+end
+
 #View all my playlists
 get '/my_playlists' do
   logged_in

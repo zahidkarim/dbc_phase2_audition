@@ -7,6 +7,7 @@
   <% @playlists.each do |playlist| %>
     <a href="/playlists/<%= playlist.id %>"><%= playlist.name %></a> ---
   <% end %>
-  </div>
+  </div><br>
 
+<%= erb :'playlist/create_playlist' %>
 </div>
