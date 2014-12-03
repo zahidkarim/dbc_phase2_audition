@@ -26,3 +26,4 @@ end
 #soundcould
 
 gem 'soundcloud', '~>0.3.2'
+gem 'dotenv'

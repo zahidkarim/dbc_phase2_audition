@@ -17,7 +17,7 @@ require 'logger'
 require 'pry'
 require 'sinatra'
 require "sinatra/reloader" if development?
-
+# require 'dontenv'
 require 'erb'
 
 # Some helper constants for path-centric logic
@@ -34,8 +34,9 @@ require APP_ROOT.join('config', 'database')
 
 #Sound CLoud API
 require 'soundcloud'
+# Dotenv.load
 # begin
-$client = SoundCloud.new({:client_id => 'ENV[SOUNDCLOUD_CLIENT_ID]'})
+# $client = SoundCloud.new({:client_id => 'ENV[SOUNDCLOUD_CLIENT_ID]'})
 # rescue SoundCloud::ResponseError => e
 #  p e.response
 # end
