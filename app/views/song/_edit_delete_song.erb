@@ -1,7 +1,7 @@
 <% if song.user_id == current_user.id %>
   <form action="/songs/<%= song.id %>" method="POST">
     <input type="hidden" name="_method" value="DELETE">
-    <input type="submit" value="Delete This Song">
+    <input type="submit" value="Delete This Song" id="button">
   </form>
 
   <a href="/my_songs" class="edit_link">Edit this song</a>
