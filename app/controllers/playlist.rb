@@ -1,8 +1,12 @@
 get '/playlists/all' do
-  if session[:user_id]
+  logged_in
     @playlists = Playlist.all
     erb :"/playlist/all"
-  else
-    redirect("/login")
-  end
+end
+
+get '/playlists/:id' do |id|
+  logged_in
+
+    # erb :"/playlist/one"
+  erb :"/playlist/all"
 end

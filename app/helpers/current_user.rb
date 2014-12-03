@@ -5,3 +5,7 @@ def current_user
     return nil
   end
 end
+
+def logged_in
+  redirect('/login') if session[:user_id] == nil
+end
