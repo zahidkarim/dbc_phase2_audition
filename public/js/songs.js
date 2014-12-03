@@ -24,4 +24,11 @@ $(".edit_form").on("submit", function(event){
   })
 })
 
+  $('.song').draggable();
+  $('.playlist').droppable({
+      drop: function( event, ui ) {
+        alert('Dropped')
+    }
+  })
+
 });
