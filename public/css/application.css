@@ -11,11 +11,6 @@
   font-size: 0.5em;
 }
 
-
-span{
-  color:#FFFFF;
-}
-
 th {
   text-align: left;
 }
@@ -66,7 +61,8 @@ img {
 }
 
 .playlist{
-  width:100%;
+  display: inline-block;
+  width: 20%;
 }
 .song a{
   color:red;
