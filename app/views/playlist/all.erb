@@ -1,10 +1,10 @@
 <div class="container">
-  <%= erb :nav_bar %>
+  <%= erb :_nav_bar %>
 </div>
 
 <div class="bottom_background"></div>
 <div class="bottom">
-<%= erb :'playlist/create_playlist' %>
+<%= erb :'playlist/_create_playlist' %>
   <div class="all_playlists"><br><br>
   <% @playlists.each do |playlist| %>
     <div class="playlist"><a href="/playlists/<%= playlist.id %>"><%= playlist.name %></a>

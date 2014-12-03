@@ -1,10 +1,10 @@
 <div class="container">
-  <%= erb :nav_bar %>
+  <%= erb :_nav_bar %>
 </div>
 
 <div class="bottom_background"></div>
 <div class="bottom"><br><br>
-   <%= erb :'/song/edit_delete_song', :locals => {song: @song} %><br><br>
+   <%= erb :'/song/_edit_delete_song', :locals => {song: @song} %><br><br>
   <div class="song_info"><br><br>
     <img src="<%= @song.album_art %>"/><br><br>
     Title: <a href="https://<%= @song.song_url %>"><%= @song.title %></a><br><br>
