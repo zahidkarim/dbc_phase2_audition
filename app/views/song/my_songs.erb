@@ -3,12 +3,13 @@
 </div>
 
 <div class="bottom_background"></div>
+
 <div class="bottom">
   <div class="all_songs"><br><br>
-  <% @songs.each do |song| %>
-    <a href="/songs/<%= song.id %>"><img src="<%= song.album_art %>"/></a>
-    <%= song.title %>
-  <% end %>
+    <% @songs.each do |song| %>
+      <a href="/songs/<%= song.id %>"><img src="<%= song.album_art %>"/></a>
+      <%= song.title %>
+    <% end %>
   </div>
 
 </div>
