@@ -1,0 +1,8 @@
+<% if song.user_id == current_user.id %>
+  <form action="/songs/<%= song.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete This Song">
+  </form>
+
+<% else %>
+<% end %>
