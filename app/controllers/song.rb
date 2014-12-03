@@ -15,6 +15,7 @@ post '/my_songs' do
 end
 
 #View one song
+logged_in
 get '/songs/:id' do |id|
   logged_in
     @song = Song.find(id)
