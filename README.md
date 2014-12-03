@@ -85,10 +85,10 @@ CSS
 3) CRUD Song - DONE
 4) Make sure the associations work - DONE
 -----GOAL LUNCH---------------
-5) Make sure the edit/delete only if you are user
-6) Make AJAX Buttons for CRUD
-7) Beautify
+5) Make sure the edit/delete only if you are user - DONE
+6) Make AJAX Buttons for CRUD - DONE
+7) Beautify -
 -----REASSESS___________
-8) Drag and Drop
+8) Drag and Drop - DONE FOR NOW
 9  API Page to pull API info
 

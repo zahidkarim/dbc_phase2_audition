@@ -79,3 +79,7 @@ img {
 .edit_form{
   display:none;
 }
+
+span {
+  color:red;
+}

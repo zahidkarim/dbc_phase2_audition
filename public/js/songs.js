@@ -26,8 +26,8 @@ $(".edit_form").on("submit", function(event){
 
   $('.song').draggable();
   $('.playlist').droppable({
-      drop: function( event, ui ) {
-        alert('Dropped')
+      drop: function( event) {
+        $(".container").append("<span>The drag and drop features are comming soon!</span>");
     }
   })
 
