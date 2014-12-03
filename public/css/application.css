@@ -34,3 +34,8 @@ th {
   background-size:100%;
   opacity: 0.3;
 }
+
+a{
+  text-decoration: none;
+  color:black;
+}
