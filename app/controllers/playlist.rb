@@ -28,3 +28,10 @@ get '/playlists/:id' do |id|
   @songs = @playlist.songs
   erb :"/playlist/one"
 end
+
+# Delete playlist
+delete '/playlists/:id' do |id|
+  playlist = Playlist.find(id)
+  playlist.destroy
+  redirect('/my_playlists')
+end

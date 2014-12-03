@@ -1,0 +1,7 @@
+<% if playlist.user == current_user %>
+  <form action="/playlists/<%= playlist.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete This Playlist">
+  </form>
+<% else %>
+<% end %>
