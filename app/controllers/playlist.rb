@@ -18,7 +18,7 @@ get '/my_playlists' do
   logged_in
     user = current_user
     @playlists = user.playlists
-    erb :"/playlist/my_playlists"
+    erb :"/playlist/all"
 end
 
 #View one playlist - all the songs in it
