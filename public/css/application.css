@@ -33,6 +33,7 @@ th {
   width:100%;
   font-family: 'Rock Salt', cursive;
   font-size: 0.5em;
+  text-align: center;
 }
 
 .bottom_background{
@@ -43,6 +44,11 @@ th {
   background-image: url("bottom_img.png") ;
   background-size:100%;
   opacity: 0.3;
+}
+
+h1{
+  margin:0;
+  padding:0;
 }
 
 a{
@@ -59,6 +65,13 @@ img {
   display: none;
 }
 
+.playlist{
+  width:100%;
+}
 .song a{
   color:red;
+}
+
+.all_playlists{
+  text-align: center;
 }
