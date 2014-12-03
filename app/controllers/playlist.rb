@@ -6,7 +6,7 @@ end
 
 get '/playlists/:id' do |id|
   logged_in
-
-    # erb :"/playlist/one"
-  erb :"/playlist/all"
+  playlist = Playlist.find(id)
+  @songs = playlist.songs
+  erb :"/playlist/one"
 end
