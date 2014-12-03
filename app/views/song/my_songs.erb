@@ -3,6 +3,7 @@
 </div>
 
 <div class="bottom">
+<%= erb :'song/create_song' %><br><br>
   <div class="all_songs"><br><br>
   <% @songs.each do |song| %>
     <a href="/songs/<%= song.id %>"><img src="<%= song.album_art %>"/></a> ---

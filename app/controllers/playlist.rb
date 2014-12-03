@@ -24,7 +24,7 @@ end
 #View one playlist - all the songs in it
 get '/playlists/:id' do |id|
   logged_in
-  playlist = Playlist.find(id)
-  @songs = playlist.songs
+  @playlist = Playlist.find(id)
+  @songs = @playlist.songs
   erb :"/playlist/one"
 end
