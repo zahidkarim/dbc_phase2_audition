@@ -24,13 +24,13 @@ get '/songs/:id' do |id|
 end
 
 #Edit palylist
-# put '/songs/:id' do |id|
-#   playlist = Playlist.find(id)
-#   playlist.update(params[:playlist])
-#   redirect("/playlists/#{id}")
-# end
+put '/songs/:id' do |id|
+  song = Song.find(id)
+  song.update(params[:song])
+  redirect("/songs/#{id}")
+end
 
-# Delete playlist
+# Delete Song
 delete '/songs/:id' do |id|
   song = Song.find(id)
   @playlist_id = song.playlist_id

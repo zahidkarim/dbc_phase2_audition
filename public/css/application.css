@@ -32,8 +32,15 @@ th {
   height:82%;
   width:100%;
   font-family: 'Rock Salt', cursive;
-  background-image: url("bottom_img.png") ;
   font-size: 0.5em;
+}
+
+.bottom_background{
+  position: absolute;
+  bottom:0;
+  height:82%;
+  width:100%;
+  background-image: url("bottom_img.png") ;
   background-size:100%;
   opacity: 0.3;
 }
@@ -46,4 +53,12 @@ a{
 img {
   height:50px;
   width:50px;
+}
+
+.song{
+  display: none;
+}
+
+.song a{
+  color:red;
 }

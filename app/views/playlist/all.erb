@@ -2,12 +2,15 @@
   <%= erb :nav_bar %>
 </div>
 
+<div class="bottom_background"></div>
 <div class="bottom">
+<%= erb :'playlist/create_playlist' %>
   <div class="all_playlists"><br><br>
   <% @playlists.each do |playlist| %>
-    <a href="/playlists/<%= playlist.id %>"><%= playlist.name %></a> ---
-  <% end %>
-  </div><br>
-
-<%= erb :'playlist/create_playlist' %>
+    <div class="playlist"><a href="/playlists/<%= playlist.id %>"><%= playlist.name %></a>
+      <% playlist.songs.each do |song| %>
+        <p class="song"><a href="/songs/<%= song.id %>"><%= song.title %></a></p>
+      <% end %></div>
+  <% end %><br><br>
+  </div>
 </div>

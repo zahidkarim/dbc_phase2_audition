@@ -2,6 +2,7 @@
  <%= erb :nav_bar %>
 </div>
 
+<div class="bottom_background"></div>
 <div class="bottom">
   <h1><%= @playlist.name %></h1>
   <%= erb :'song/create_song', :locals => {playlist: @playlist} %>

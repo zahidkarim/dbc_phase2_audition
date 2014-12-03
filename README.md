@@ -82,7 +82,7 @@ CSS
 
 1) Setup tables, migrations, and seed the data - DONE
 2) CRUD Playlist (all separate pages) - DONE
-3) CRUD Song -
+3) CRUD Song - DONE
 4) Make sure the associations work - DONE
 -----GOAL LUNCH---------------
 5) Make sure the edit/delete only if you are user
