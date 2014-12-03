@@ -75,3 +75,7 @@ img {
 .all_playlists{
   text-align: center;
 }
+
+.edit_form{
+  display:none;
+}

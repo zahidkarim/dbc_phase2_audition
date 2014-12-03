@@ -4,7 +4,8 @@
     <input type="submit" value="Delete This Song">
   </form>
 
-  <form action="/songs/<%= song.id %>" method="POST">
+  <a href="/my_songs" class="edit_link">Edit this song</a>
+  <form action="/songs/<%= song.id %>" method="POST" class="edit_form">
   <input type="hidden" name="_method" value="PUT">
   Edit -- Title:
   <input name="song[title]" type="text" value="<%= song.title %>">
