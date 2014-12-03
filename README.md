@@ -83,7 +83,7 @@ CSS
 1) Setup tables, migrations, and seed the data - DONE
 2) CRUD Playlist (all separate pages) -
 3) CRUD Song
-4) Make sure the associations work
+4) Make sure the associations work - DONE
 -----GOAL LUNCH---------------
 5) Make sure the edit/delete only if you are user
 6) Make AJAX Buttons for CRUD
