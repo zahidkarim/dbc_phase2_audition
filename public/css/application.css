@@ -1,0 +1,36 @@
+.container {
+  position: absolute;
+  height:13%;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  background-image: url("nav_img.png") ;
+  background-size:100%;
+  font-family: 'Rock Salt', cursive;
+  color:black;
+  font-weight: Bold;
+  font-size: 0.5em;
+}
+
+span{
+  color:#FFFFF;
+}
+
+th {
+  text-align: left;
+}
+
+#button{
+  color:red;
+  border-radius: 15%;
+  background-color:#FFFFFF;
+}
+
+.bottom{
+  position: absolute;
+  bottom:0;
+  height:82%;
+  width:100%;
+  background-image: url("bottom_img.png") ;
+  background-size:100%;
+  opacity: 0.3;
+}
