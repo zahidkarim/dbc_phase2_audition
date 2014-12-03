@@ -31,3 +31,6 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+
+#Sound CLoud API
+$client = SoundCloud.new({:client_id => ENV['SOUNDCLOUD_CLIENT_ID']})
