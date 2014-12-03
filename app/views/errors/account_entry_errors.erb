@@ -1,7 +1,5 @@
-<h2>Couldn't Sign You Up :(</h2>
-<p>Heres what went wrong:</p>
-<ol>
+<div class="container">
 <% errors.each do |attr, error_msg| %>
   <li><%= attr %>: <%= error_msg.join(", ") %></li>
 <% end %>
-</ol>
+</div>
