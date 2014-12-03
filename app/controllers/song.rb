@@ -25,9 +25,15 @@ end
 
 #Edit palylist
 put '/songs/:id' do |id|
-  song = Song.find(id)
-  song.update(params[:song])
-  redirect("/songs/#{id}")
+  if request.xhr?
+    @song = Song.find(id)
+    @song.update(params[:song])
+    erb :'/song/one'
+  else
+    @song = Song.find(id)
+    @song.update(params[:song])
+    redirect("/songs/#{id}")
+  end
 end
 
 # Delete Song
