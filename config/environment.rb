@@ -1,3 +1,4 @@
+
 # Set up gems listed in the Gemfile.
 # See: http://gembundler.com/bundler_setup.html
 #      http://stackoverflow.com/questions/7243486/why-do-you-need-require-bundler-setup
@@ -10,14 +11,15 @@ require 'rubygems'
 
 require 'uri'
 require 'pathname'
-
+require 'dotenv'
+Dotenv.load
 require 'pg'
 require 'active_record'
 require 'logger'
 require 'pry'
 require 'sinatra'
 require "sinatra/reloader" if development?
-# require 'dontenv'
+
 require 'erb'
 
 # Some helper constants for path-centric logic
@@ -34,14 +36,14 @@ require APP_ROOT.join('config', 'database')
 
 #Sound CLoud API
 require 'soundcloud'
-# Dotenv.load
+
 # begin
-# $client = SoundCloud.new({:client_id => 'ENV[SOUNDCLOUD_CLIENT_ID]'})
+CLIENT = SoundCloud.new({:client_id => ENV['SOUNDCLOUD_CLIENT_ID']})
 # rescue SoundCloud::ResponseError => e
 #  p e.response
 # end
 
-# $client = Soundcloud.new(:client_id => 'ENV[SOUNDCLOUD_CLIENT_ID]',
+# CLIENT = Soundcloud.new(:client_id => 'ENV[SOUNDCLOUD_CLIENT_ID]',
 #                         :client_secret => 'ENV[SOUNDCLOUD_SECRET]',
 #                         :username => 'zahid.jethani@gmail.com',
 #                         :password => 'Brainstormin3')
